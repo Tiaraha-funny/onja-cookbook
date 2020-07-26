@@ -2,38 +2,61 @@ h1 {
   font-size: 80px;
   font-weight: 700;  
 }
+
 form {
     display: grid;
     place-items: center center;
     margin: 0;
 }
 
-span {
-    font-size: 25px;
-    font-weight: 600;
-    line-height: 60px;
-}
 input {
     padding: 12px;
     border-radius: 8px;
 }
+
 button {
     padding: 8px;
     border-radius: 5px;
 }
+
 p {
     text-align: start;
 }
+
 .info__main {
     margin-left: -6rem;
 }
-.info {
-    margin-left: -2rem;
+
+.info__input {
+    margin-left: -2.5rem;
 }
+
 #choice {
     padding: 10px;
     border-radius: 5px;
 }
+
 ul {
     list-style: none;
+}
+
+li {
+    list-style: none;
+    font-size: 25px;
+    font-weight: 600;
+    line-height: 60px;
+}
+
+.submit {
+    font-size: 30px;
+    font-weight: 600;
+    padding: 25px;
+    border-radius: 50px;
+    background-color: greenyellow;
+    color: hotpink;
+}
+
+.submit:hover {
+    background-color: red;
+    color: black;    
 }
