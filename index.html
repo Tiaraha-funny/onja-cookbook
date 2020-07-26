@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cookbook</title>
+</head>
+<body>
+    <!-- The title of the project -->
+    <header>
+        <h1>Cookbook</h1>
+    </header>
+
+    <!-- The form of all the inputs -->
+    
+    <form action="/action_page.php" method="post">
+
+      <p>
+        <span class="input">What is the recipe name?</span><br>
+        <input type="text" value="eggs"><br>
+      </p>
+
+      <p>
+        <span class="input">Picture of the result (URL)</span><br>
+        <input type="text"><br>
+      </p>
+
+      <p>
+        <span class="input">Who is the cook?</span><br>
+        <input type="text"><br>
+      </p>
+
+      <p>
+        <span class="input">What is the difficult?</span><br>
+        <select name="dificulty" id="choice">
+            <option value="easy">Easy</option>
+            <option value="medium">Medium</option>
+            <option value="hard">Hard</option>
+            <option value="very difficult">Very Difficult</option>
+        </select>
+      </p>
+      
+      <p>
+          <span>How much time does it take?</span><br>
+          <select name="timing" id="choice">
+            <option value="less 15 min">Less that 15 munites</option>
+            <option value="15 min">Exactly 15 miunites</option>
+            <option value="30 min">Exactly 30 munites</option>
+            <option value="45 min">Exactly 45 munites</option>
+            <option value="60 min">Takes 60 munites</option>
+            <option value="1 h">Around an hour</option>
+          </select>
+      </p>
+
+          <nav>
+            <span>Ingredients</span><br>
+              <ul>
+                <li><input type="text" value="Eggs"></li><br>
+                <button class="new__ingredient--list">Add a new ingredient to the list</button>
+              </ul>
+
+            <span>Steps</span><br> 
+              <ul>
+                  <li><input type="text" value="Put a pan on the fire"></li><br>
+                  <button class="new__step--list">Add a new step to the list</button>
+              </ul>
+        </nav>
+        <button class="submit">Submit</button>
+    </form>
+</body>
+</html>
