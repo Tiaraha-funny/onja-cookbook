@@ -1,4 +1,5 @@
 //drag the neccessary elements
+
 const addList = document.querySelector('.new__ingredient--list');
 const stepList = document.querySelector('.new__step--list');
 const inputAddList = document.querySelector('.add__list');
@@ -18,7 +19,6 @@ let myHTMLList = `
 //function to handle the adding list
 
 const handleAddListBtn = e => {
-    e.preventDefault();
     console.log('add is clicked');
     ulAddList.insertAdjacentHTML('beforeend', myHTMLList);
 }
@@ -32,14 +32,13 @@ let myHTMLStepList = `
 //function to handle the steps button
 
 const handleStepListBtn = e => {
-    e.preventDefault();
     console.log('step button is clicked');
     ulStep.insertAdjacentHTML('beforeend', myHTMLStepList);
 }
 
 //function to handle the submit button for the object
 
-const {title, picture, cook, difficulty, timing, ingredients, steps} = form;
+const {title, picture, cook, difficulty, timing, ingredients, steps} = form;// use the ducta
 
 const handleSubmitBtn = e => {
     e.preventDefault();
@@ -59,6 +58,6 @@ const handleSubmitBtn = e => {
 }
 
 // handle all the click button
-submitBtn.addEventListener('click', handleSubmitBtn);
+submitBtn.addEventListener('submit', handleSubmitBtn);
 stepList.addEventListener('click', handleStepListBtn);
 addList.addEventListener('click', handleAddListBtn);
